@@ -1,5 +1,6 @@
 site_name: SuperClaude 한국어 문서
 site_url: https://jeongsk.github.io/SuperClaude_Framework/
+docs_dir: Docs_ko
 
 theme:
   name: material

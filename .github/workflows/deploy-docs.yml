@@ -19,4 +19,4 @@ jobs:
           pip install uv
           uv pip install --system mkdocs-material
       - name: Deploy
-        run: mkdocs gh-deploy --force --config-file mkdocs.yml --docs-dir Docs_ko
+        run: mkdocs gh-deploy --force --config-file mkdocs.yml
