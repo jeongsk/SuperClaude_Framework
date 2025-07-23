@@ -1,0 +1,37 @@
+site_name: SuperClaude 한국어 문서
+site_url: https://jeongsk.github.io/SuperClaude_Framework/
+
+theme:
+  name: material
+  language: ko
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+plugins:
+  - search
+
+nav:
+  - 'SuperClaude 사용자 가이드': 'superclaude-user-guide.md'
+  - '명령어 가이드': 'commands-guide.md'
+  - '플래그 가이드': 'flags-guide.md'
+  - '페르소나 가이드': 'personas-guide.md'
+  - '설치 가이드': 'installation-guide.md'
