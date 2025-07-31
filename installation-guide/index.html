@@ -1,0 +1,1521 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://jeongsk.github.io/SuperClaude_Framework/installation-guide/">
+      
+      
+        <link rel="prev" href="../personas-guide/">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+    
+    
+      
+        <title>설치 가이드 - SuperClaude 한국어 문서</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#superclaude" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href=".." title="SuperClaude 한국어 문서" class="md-header__button md-logo" aria-label="SuperClaude 한국어 문서" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SuperClaude 한국어 문서
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              설치 가이드
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  홈
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../superclaude-user-guide/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  SuperClaude 사용자 가이드
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../commands-guide/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  명령어 가이드
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../flags-guide/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  플래그 가이드
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../personas-guide/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  페르소나 가이드
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  설치 가이드
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="SuperClaude 한국어 문서" class="md-nav__button md-logo" aria-label="SuperClaude 한국어 문서" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    SuperClaude 한국어 문서
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    홈
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../superclaude-user-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SuperClaude 사용자 가이드
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../commands-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    명령어 가이드
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../flags-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    플래그 가이드
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../personas-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    페르소나 가이드
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    설치 가이드
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    설치 가이드
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 보기보다 쉽습니다!
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎯 보기보다 쉽습니다!">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1단계: 패키지 설치
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uv-uvx" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 UV / UVX 설정 가이드
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uv" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌀 uv로 설치
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uvx-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚡ uvx로 설치 (크로스 플랫폼 CLI)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uv-uvx_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 UV / UVX 설정 가이드
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 UV / UVX 설정 가이드">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uv_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌀 uv로 설치
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uvx-cli_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚡ uvx로 설치 (크로스 플랫폼 CLI)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ 설치 완료
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 참고:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚠️ 중요 참고
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      시작하기 전에 🔍
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="시작하기 전에 🔍">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      필요한 것 💻
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      빠른 확인 🔍
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      빠른 시작 🚀
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      설치 옵션 🎯
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="설치 옵션 🎯">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 최소 설치
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 빠른 설치 (권장)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 개발자 설치
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎛️ 대화형 설치
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      단계별 설치 📋
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="단계별 설치 📋">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      전제 조건 설정 🛠️
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#superclaude_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      SuperClaude 받기 📥
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      설치 프로그램 실행 🎬
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      설치 중 📱
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      설치 후 ✅
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="설치 후 ✅">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      빠른 테스트 🧪
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      설치된 것 📂
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      첫 단계 🎯
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      설치 관리 🛠️
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="설치 관리 🛠️">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      업데이트 📅
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      백업 💾
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      제거 🗑️
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      문제 해결 🔧
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="문제 해결 🔧">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      일반적인 문제 🚨
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      플랫폼별 문제 🖥️
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      아직도 문제가 있나요? 🤔
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      고급 옵션 ⚙️
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="고급 옵션 ⚙️">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      사용자 지정 설치 디렉토리
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      컴포넌트 선택
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      개발 설정
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    <span class="md-ellipsis">
+      다음은 무엇인가요? 🚀
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    <span class="md-ellipsis">
+      최종 참고 사항 📝
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="최종 참고 사항 📝">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚠️ 중요 참고
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="superclaude">SuperClaude 설치 가이드 📦</h1>
+<h2 id="_1">🎯 보기보다 쉽습니다!</h2>
+<p><strong>솔직한 진실</strong>: 이 가이드는 모든 세부 사항을 다루고 싶어서 길어 보이지만, 설치는 실제로 매우 간단합니다. 대부분의 사람들은 하나의 명령어로 2분 안에 끝냅니다!</p>
+<h3 id="1">1단계: 패키지 설치</h3>
+<p><strong>옵션 A: PyPI에서 (권장)</strong></p>
+<pre><code class="language-bash">uv add SuperClaude
+</code></pre>
+<p><strong>옵션 B: 소스에서</strong></p>
+<pre><code class="language-bash">git clone https://github.com/NomenAK/SuperClaude.git
+cd SuperClaude
+uv sync
+</code></pre>
+<h3 id="uv-uvx">🔧 UV / UVX 설정 가이드</h3>
+<p>SuperClaude v3는 <a href="https://github.com/astral-sh/uv"><code>uv</code></a> (더 빠르고 현대적인 Python 패키지 관리자) 또는 크로스 플랫폼 사용을 위한 <code>uvx</code>를 통한 설치도 지원합니다.</p>
+<h3 id="uv">🌀 <code>uv</code>로 설치</h3>
+<p><code>uv</code>가 설치되어 있는지 확인하세요:</p>
+<pre><code class="language-bash">curl -Ls https://astral.sh/uv/install.sh | sh
+</code></pre>
+<blockquote>
+<p>또는 <a href="https://github.com/astral-sh/uv">https://github.com/astral-sh/uv</a>의 지침을 따르세요</p>
+</blockquote>
+<p><code>uv</code>가 사용 가능하면 다음과 같이 SuperClaude를 설치할 수 있습니다:</p>
+<pre><code class="language-bash">uv venv
+source .venv/bin/activate
+uv pip install SuperClaude
+</code></pre>
+<h3 id="uvx-cli">⚡ <code>uvx</code>로 설치 (크로스 플랫폼 CLI)</h3>
+<p><code>uvx</code>를 사용하는 경우 다음을 실행하세요:</p>
+<pre><code class="language-bash">uvx pip install SuperClaude
+</code></pre>
+<h2 id="uv-uvx_1">🔧 UV / UVX 설정 가이드</h2>
+<p>SuperClaude v3는 <a href="https://github.com/astral-sh/uv"><code>uv</code></a> (더 빠르고 현대적인 Python 패키지 관리자) 또는 크로스 플랫폼 사용을 위한 <code>uvx</code>를 통한 설치도 지원합니다.</p>
+<h3 id="uv_1">🌀 <code>uv</code>로 설치</h3>
+<p><code>uv</code>가 설치되어 있는지 확인하세요:</p>
+<pre><code class="language-bash">curl -Ls https://astral.sh/uv/install.sh | sh
+</code></pre>
+<blockquote>
+<p>또는 <a href="https://github.com/astral-sh/uv">https://github.com/astral-sh/uv</a>의 지침을 따르세요</p>
+</blockquote>
+<p><code>uv</code>가 사용 가능하면 다음과 같이 SuperClaude를 설치할 수 있습니다:</p>
+<pre><code class="language-bash">uv venv
+source .venv/bin/activate
+uv pip install SuperClaude
+</code></pre>
+<h3 id="uvx-cli_1">⚡ <code>uvx</code>로 설치 (크로스 플랫폼 CLI)</h3>
+<p><code>uvx</code>를 사용하는 경우 다음을 실행하세요:</p>
+<pre><code class="language-bash">uvx pip install SuperClaude
+</code></pre>
+<h3 id="_2">✅ 설치 완료</h3>
+<p>설치 후 일반적인 설치 단계를 계속 진행하세요:</p>
+<pre><code class="language-bash">python3 -m SuperClaude install
+</code></pre>
+<p>또는 bash 스타일 CLI 사용:</p>
+<pre><code class="language-bash">SuperClaude install
+</code></pre>
+<h3 id="_3">🧠 참고:</h3>
+<ul>
+<li><code>uv</code>는 더 나은 캐싱과 성능을 제공합니다.</li>
+<li>Python 3.8+와 호환되며 SuperClaude와 원활하게 작동합니다.</li>
+</ul>
+<hr />
+<h3 id="_4">⚠️ 중요 참고</h3>
+<p><strong>SuperClaude 설치 후.</strong>
+<strong><code>SuperClaude commands</code>, <code>python3 -m SuperClaude commands</code> 또는 <code>python3 SuperClaude commands</code>를 사용할 수 있습니다</strong></p>
+<p><strong>방금 무슨 일이 있었나요?</strong> SuperClaude는 필요한 모든 것을 설정하려고 시도했습니다. 보통 복잡한 구성, 의존성 찾기 또는 설정 골칫거리가 없습니다! 🎉</p>
+<hr />
+<p>SuperClaude v3 설치에 대한 포괄적인 가이드입니다. 하지만 대부분의 사람들은 위의 빠른 시작 부분을 지나 읽을 필요가 없다는 것을 기억하세요! 😊</p>
+<h2 id="_5">시작하기 전에 🔍</h2>
+<h3 id="_6">필요한 것 💻</h3>
+<p>SuperClaude는 <strong>Windows</strong>, <strong>macOS</strong>, <strong>Linux</strong>에서 작동합니다. 필요한 것은 다음과 같습니다:</p>
+<p><strong>필수:</strong>
+- <strong>Python 3.8 이상</strong> - 프레임워크는 Python으로 작성되었습니다
+- <strong>Claude CLI</strong> - SuperClaude는 Claude Code를 향상시키므로 먼저 설치해야 합니다</p>
+<p><strong>선택 사항 (하지만 권장):</strong>
+- <strong>Node.js 16+</strong> - MCP 서버 통합을 원하는 경우에만 필요합니다
+- <strong>Git</strong> - 개발 워크플로우에 유용합니다</p>
+<h3 id="_7">빠른 확인 🔍</h3>
+<p>설치하기 전에 기본 사항이 있는지 확인해 보겠습니다:</p>
+<pre><code class="language-bash"># Python 버전 확인 (3.8+ 여야 함)
+python3 --version
+
+# Claude CLI가 설치되어 있는지 확인
+claude --version
+
+# Node.js 확인 (선택 사항, MCP 서버용)
+node --version
+</code></pre>
+<p>이 중 하나라도 실패하면 아래의 <a href="#전제-조건-설정-️">전제 조건 설정</a> 섹션을 참조하세요.</p>
+<h2 id="_8">빠른 시작 🚀</h2>
+<p><strong>🏆 "그냥 작동하게 만들기" 접근 방식 (사용자의 90%에게 권장)</strong>
+<strong>옵션 A: PyPI에서 (권장)</strong></p>
+<pre><code class="language-bash">pip install SuperClaude
+
+# 권장 설정으로 설치
+SuperClaude install --quick
+
+# 끝입니다! 🎉
+</code></pre>
+<p><strong>옵션 B: 소스에서</strong></p>
+<pre><code class="language-bash"># 저장소 복제
+git clone &lt;repository-url&gt;
+cd SuperClaude
+pip install .
+
+# 권장 설정으로 설치
+SuperClaude install --quick
+
+# 끝입니다! 🎉
+</code></pre>
+<p><strong>⚠️ 중요 참고</strong>
+<strong>SuperClaude 설치 후.</strong>
+<strong><code>SuperClaude commands</code>, <code>python3 -m SuperClaude commands</code> 또는 <code>python3 SuperClaude commands</code>를 사용할 수 있습니다</strong></p>
+<p><strong>방금 얻은 것:</strong>
+- ✅ 전문가를 자동으로 활성화하는 16개의 스마트 명령어
+- ✅ 언제 도와야 할지 아는 11명의 전문가 페르소나
+- ✅ 복잡성을 알아서 처리하는 지능적인 라우팅
+- ✅ 약 2분의 시간과 ~50MB의 디스크 공간</p>
+<p><strong>정말로, 끝났습니다.</strong> Claude Code를 열고 <code>/help</code>를 입력하여 SuperClaude가 마법을 부리는 것을 지켜보세요.</p>
+<p><strong>무슨 일을 할지 불안한가요?</strong> 먼저 다음으로 확인하세요:</p>
+<pre><code class="language-bash">SuperClaude install --quick --dry-run
+</code></pre>
+<h2 id="_9">설치 옵션 🎯</h2>
+<p>세 가지 설치 프로필 중에서 선택할 수 있습니다:</p>
+<h3 id="_10">🎯 최소 설치</h3>
+<pre><code class="language-bash">SuperClaude install --minimal
+</code></pre>
+<ul>
+<li><strong>내용</strong>: 핵심 프레임워크 파일만</li>
+<li><strong>시간</strong>: ~1분</li>
+<li><strong>공간</strong>: ~20MB</li>
+<li><strong>적합 대상</strong>: 테스트, 기본 향상, 최소 설정</li>
+<li><strong>포함 내용</strong>: Claude를 안내하는 핵심 동작 문서</li>
+</ul>
+<h3 id="_11">🚀 빠른 설치 (권장)</h3>
+<pre><code class="language-bash">SuperClaude install --quick
+</code></pre>
+<ul>
+<li><strong>내용</strong>: 핵심 프레임워크 + 16개 슬래시 명령어</li>
+<li><strong>시간</strong>: ~2분</li>
+<li><strong>공간</strong>: ~50MB</li>
+<li><strong>적합 대상</strong>: 대부분의 사용자, 일반 개발</li>
+<li><strong>포함 내용</strong>: 최소 설치의 모든 것 + <code>/analyze</code>, <code>/build</code>, <code>/improve</code>와 같은 특수 명령어</li>
+</ul>
+<h3 id="_12">🔧 개발자 설치</h3>
+<pre><code class="language-bash">SuperClaude install --profile developer
+</code></pre>
+<ul>
+<li><strong>내용</strong>: MCP 서버 통합을 포함한 모든 것</li>
+<li><strong>시간</strong>: ~5분</li>
+<li><strong>공간</strong>: ~100MB</li>
+<li><strong>적합 대상</strong>: 파워 유저, 기여자, 고급 워크플로우</li>
+<li><strong>포함 내용</strong>: 모든 것 + Context7, Sequential, Magic, Playwright 서버</li>
+</ul>
+<h3 id="_13">🎛️ 대화형 설치</h3>
+<pre><code class="language-bash">SuperClaude install
+</code></pre>
+<ul>
+<li>컴포넌트를 선택하고 고를 수 있습니다</li>
+<li>각 컴포넌트가 하는 일에 대한 자세한 설명을 보여줍니다</li>
+<li>설치되는 것을 제어하고 싶을 때 좋습니다</li>
+</ul>
+<h2 id="_14">단계별 설치 📋</h2>
+<h3 id="_15">전제 조건 설정 🛠️</h3>
+<p><strong>Python이 없나요?</strong></p>
+<pre><code class="language-bash"># Linux (Ubuntu/Debian)
+sudo apt update &amp;&amp; sudo apt install python3 python3-pip
+
+# macOS
+brew install python3
+
+# Windows
+# https://python.org/downloads/에서 다운로드
+# 또는 명령 프롬프트나 파워쉘 열기
+winget install python
+</code></pre>
+<p><strong>Claude CLI가 없나요?</strong>
+- 설치 지침은 https://claude.ai/code를 방문하세요
+- SuperClaude는 Claude Code를 향상시키므로 먼저 필요합니다</p>
+<p><strong>Node.js가 없나요? (선택 사항)</strong></p>
+<pre><code class="language-bash"># Linux (Ubuntu/Debian)
+sudo apt update &amp;&amp; sudo apt install nodejs npm
+
+# macOS
+brew install node
+
+# Windows
+# https://nodejs.org/에서 다운로드
+# 또는 명령 프롬프트나 파워쉘 열기
+winget install nodejs
+</code></pre>
+<h3 id="superclaude_1">SuperClaude 받기 📥</h3>
+<p><strong>옵션 1: PyPI에서 (권장)</strong></p>
+<pre><code class="language-bash">pip install SuperClaude
+</code></pre>
+<p><strong>옵션 2: 최신 릴리스 다운로드</strong></p>
+<pre><code class="language-bash"># 최신 릴리스 다운로드 및 압축 해제
+# (URL을 실제 릴리스 URL로 교체)
+curl -L &lt;release-url&gt; -o superclaude-v3.zip
+unzip superclaude-v3.zip
+cd superclaude-v3
+pip install .
+</code></pre>
+<p><strong>옵션 3: Git에서 복제</strong></p>
+<pre><code class="language-bash">git clone &lt;repository-url&gt;
+cd SuperClaude
+pip install .
+</code></pre>
+<h3 id="_16">설치 프로그램 실행 🎬</h3>
+<p>설치 프로그램은 매우 똑똑하며 프로세스를 안내합니다:</p>
+<pre><code class="language-bash"># 사용 가능한 모든 옵션 보기
+SuperClaude install --help
+
+# 빠른 설치 (권장)
+SuperClaude install --quick
+
+# 먼저 무슨 일이 일어날지 보고 싶나요?
+SuperClaude install --quick --dry-run
+
+# 모든 것 설치
+SuperClaude install --profile developer
+
+# 조용한 설치 (최소 출력)
+SuperClaude install --quick --quiet
+
+# 강제 설치 (확인 건너뛰기)
+python3 SuperClaude.py install --quick --force
+</code></pre>
+<h3 id="_17">설치 중 📱</h3>
+<p>설치할 때 일어나는 일은 다음과 같습니다:</p>
+<ol>
+<li><strong>시스템 확인</strong> - 필요한 종속성이 있는지 확인합니다</li>
+<li><strong>디렉토리 설정</strong> - <code>~/.claude/</code> 디렉토리 구조를 생성합니다</li>
+<li><strong>핵심 파일</strong> - 프레임워크 문서 파일을 복사합니다</li>
+<li><strong>명령어</strong> - 슬래시 명령어 정의를 설치합니다 (선택한 경우)</li>
+<li><strong>MCP 서버</strong> - MCP 서버를 다운로드하고 구성합니다 (선택한 경우)</li>
+<li><strong>구성</strong> - <code>settings.json</code>을 기본 설정으로 설정합니다</li>
+<li><strong>유효성 검사</strong> - 모든 것이 작동하는지 테스트합니다</li>
+</ol>
+<p>설치 프로그램은 진행 상황을 보여주고 문제가 발생하면 알려줍니다.</p>
+<h2 id="_18">설치 후 ✅</h2>
+<h3 id="_19">빠른 테스트 🧪</h3>
+<p>모든 것이 작동했는지 확인해 보겠습니다:</p>
+<pre><code class="language-bash"># 파일이 설치되었는지 확인
+ls ~/.claude/
+
+# CLAUDE.md, COMMANDS.md, settings.json 등이 표시되어야 합니다.
+</code></pre>
+<p><strong>Claude Code로 테스트:</strong>
+1. Claude Code 열기
+2. <code>/help</code>를 입력해보세요 - SuperClaude 명령어가 표시되어야 합니다
+3. <code>/analyze --help</code>를 시도해보세요 - 명령어 옵션이 표시되어야 합니다</p>
+<h3 id="_20">설치된 것 📂</h3>
+<p>SuperClaude는 기본적으로 <code>~/.claude/</code>에 설치됩니다. 다음을 찾을 수 있습니다:</p>
+<pre><code>~/.claude/
+├── CLAUDE.md # 주 프레임워크 진입점
+├── COMMANDS.md # 사용 가능한 슬래시 명령어
+├── FLAGS.md # 명령어 플래그 및 옵션
+├── PERSONAS.md # 스마트 페르소나 시스템
+├── PRINCIPLES.md # 개발 원칙
+├── RULES.md # 운영 규칙
+├── MCP.md # MCP 서버 통합
+├── MODES.md # 운영 모드
+├── ORCHESTRATOR.md # 지능적인 라우팅
+├── settings.json # 구성 파일
+└── commands/ # 개별 명령어 정의
+    ├── analyze.md
+    ├── build.md
+    ├── improve.md
+    └── ... (13개 이상)
+</code></pre>
+<p><strong>각 파일의 역할:</strong>
+- <strong>CLAUDE.md</strong> - Claude Code에 SuperClaude에 대해 알리고 다른 파일을 로드합니다
+- <strong>settings.json</strong> - 구성 (MCP 서버, 후크 등)
+- <strong>commands/</strong> - 각 슬래시 명령어에 대한 자세한 정의</p>
+<h3 id="_21">첫 단계 🎯</h3>
+<p>시작하려면 다음 명령어를 시도해보세요:</p>
+<pre><code class="language-bash"># Claude Code에서 다음을 시도해보세요:
+/sc:help # 사용 가능한 명령어 보기
+/sc:analyze README.md # 파일 분석
+/sc:build --help # 빌드 옵션 보기
+/sc:improve --help # 개선 옵션 보기
+</code></pre>
+<p><strong>압도적으로 보일까 걱정하지 마세요</strong> - SuperClaude는 Claude Code를 점진적으로 향상시킵니다. 원하는 만큼 많이 또는 적게 사용할 수 있습니다.</p>
+<h2 id="_22">설치 관리 🛠️</h2>
+<h3 id="_23">업데이트 📅</h3>
+<p>SuperClaude를 최신 상태로 유지하세요:</p>
+<pre><code class="language-bash"># 업데이트 확인
+SuperClaude update
+
+# 강제 업데이트 (로컬 변경 사항 덮어쓰기)
+SuperClaude update --force
+
+# 특정 컴포넌트만 업데이트
+SuperClaude update --components core,commands
+
+# 업데이트될 내용 보기
+SuperClaude update --dry-run
+</code></pre>
+<p><strong>업데이트 시기:</strong>
+- 새로운 SuperClaude 버전이 출시될 때
+- 문제가 있을 때 (업데이트에는 종종 수정 사항이 포함됩니다)
+- 새로운 MCP 서버가 사용 가능해질 때</p>
+<h3 id="_24">백업 💾</h3>
+<p>주요 변경 전에 백업을 만드세요:</p>
+<pre><code class="language-bash"># 백업 생성
+SuperClaude backup --create
+
+# 기존 백업 나열
+SuperClaude backup --list
+
+# 백업에서 복원
+SuperClaude backup --restore
+
+# 사용자 지정 이름으로 백업 생성
+SuperClaude backup --create --name &quot;before-update&quot;
+</code></pre>
+<p><strong>백업 시기:</strong>
+- SuperClaude를 업데이트하기 전
+- 설정을 실험하기 전
+- 제거하기 전
+- 많이 사용자화했다면 주기적으로</p>
+<h3 id="_25">제거 🗑️</h3>
+<p>SuperClaude를 제거해야 하는 경우:</p>
+<pre><code class="language-bash"># SuperClaude 제거 (백업 유지)
+SuperClaude uninstall
+
+# 완전 제거 (모든 것 제거)
+SuperClaude uninstall --complete
+
+# 제거될 내용 보기
+SuperClaude uninstall --dry-run
+</code></pre>
+<p><strong>제거되는 것:</strong>
+- <code>~/.claude/</code>의 모든 파일
+- MCP 서버 구성
+- Claude Code의 SuperClaude 설정</p>
+<p><strong>남는 것:</strong>
+- 백업 (<code>--complete</code>를 사용하지 않는 한)
+- Claude Code 자체 (SuperClaude는 건드리지 않습니다)
+- 프로젝트 및 기타 파일</p>
+<h2 id="_26">문제 해결 🔧</h2>
+<h3 id="_27">일반적인 문제 🚨</h3>
+<p><strong>"Python을 찾을 수 없습니다"</strong></p>
+<pre><code class="language-bash"># python3 대신 python을 시도해보세요
+python --version
+
+# 또는 설치되었지만 PATH에 없는지 확인
+which python3
+</code></pre>
+<p><strong>"Claude CLI를 찾을 수 없습니다"</strong>
+- 먼저 Claude Code가 설치되어 있는지 확인하세요
+- 확인하려면 <code>claude --version</code>을 시도해보세요
+- 설치 도움말은 https://claude.ai/code를 방문하세요</p>
+<p><strong>"권한 거부됨"</strong></p>
+<pre><code class="language-bash"># 명시적인 Python 경로로 시도해보세요
+/usr/bin/python3 SuperClaude.py install --quick
+
+# 또는 다른 권한이 필요한지 확인
+ls -la ~/.claude/
+</code></pre>
+<p><strong>"MCP 서버가 설치되지 않습니다"</strong>
+- Node.js가 설치되어 있는지 확인하세요: <code>node --version</code>
+- npm이 사용 가능한지 확인하세요: <code>npm --version</code>
+- 먼저 MCP 없이 설치해보세요: <code>--minimal</code> 또는 <code>--quick</code></p>
+<p><strong>"설치가 중간에 실패합니다"</strong></p>
+<pre><code class="language-bash"># 무슨 일이 일어나고 있는지 보려면 상세 출력으로 시도해보세요
+SuperClaude install --quick --verbose
+
+# 또는 먼저 드라이 런을 시도해보세요
+SuperClaude install --quick --dry-run
+</code></pre>
+<h3 id="_28">플랫폼별 문제 🖥️</h3>
+<p><strong>Windows:</strong>
+- "명령을 찾을 수 없습니다"가 표시되면 <code>python3</code> 대신 <code>python</code>을 사용하세요
+- 권한 오류가 발생하면 명령 프롬프트를 관리자 권한으로 실행하세요
+- Python이 PATH에 있는지 확인하세요</p>
+<p><strong>macOS:</strong>
+- 보안 및 개인 정보 설정에서 SuperClaude를 승인해야 할 수 있습니다
+- Python 3.8+가 없는 경우 <code>brew install python3</code>를 사용하세요
+- <code>python</code> 대신 <code>python3</code>를 명시적으로 사용해보세요</p>
+<p><strong>Linux:</strong>
+- <code>python3-pip</code>가 설치되어 있는지 확인하세요
+- 일부 패키지 설치에는 <code>sudo</code>가 필요할 수 있습니다
+- <code>~/.local/bin</code>이 PATH에 있는지 확인하세요</p>
+<h3 id="_29">아직도 문제가 있나요? 🤔</h3>
+<p><strong>문제 해결 리소스를 확인하세요:</strong>
+- GitHub 문제: https://github.com/NomenAK/SuperClaude/issues
+- 당신과 유사한 기존 문제를 찾아보세요
+- 해결책을 찾을 수 없으면 새 문제를 만드세요</p>
+<p><strong>버그를 보고할 때 다음을 포함해주세요:</strong>
+- 운영 체제 및 버전
+- Python 버전 (<code>python3 --version</code>)
+- Claude CLI 버전 (<code>claude --version</code>)
+- 실행한 정확한 명령어
+- 전체 오류 메시지
+- 예상했던 결과</p>
+<p><strong>도움 받기:</strong>
+- 일반적인 질문은 GitHub 토론
+- 최신 업데이트는 README.md를 확인하세요
+- 문제가 알려져 있는지 보려면 ROADMAP.md를 보세요</p>
+<h2 id="_30">고급 옵션 ⚙️</h2>
+<h3 id="_31">사용자 지정 설치 디렉토리</h3>
+<pre><code class="language-bash"># 사용자 지정 위치에 설치
+SuperClaude install --quick --install-dir /custom/path
+
+# 환경 변수 사용
+export SUPERCLAUDE_DIR=/custom/path
+SuperClaude install --quick
+</code></pre>
+<h3 id="_32">컴포넌트 선택</h3>
+<pre><code class="language-bash"># 사용 가능한 컴포넌트 보기
+SuperClaude install --list-components
+
+# 특정 컴포넌트만 설치
+SuperClaude install --components core,commands
+
+# 특정 컴포넌트 건너뛰기
+SuperClaude install --quick --skip mcp
+</code></pre>
+<h3 id="_33">개발 설정</h3>
+<p>SuperClaude에 기여하거나 수정할 계획이라면:</p>
+<pre><code class="language-bash"># 모든 컴포넌트가 포함된 개발자 설치
+SuperClaude install --profile developer
+
+# 개발 모드로 설치 (복사 대신 심볼릭 링크)
+SuperClaude install --profile developer --dev-mode
+
+# 개발용 git 후크와 함께 설치
+SuperClaude install --profile developer --dev-hooks
+</code></pre>
+<h2 id="_34">다음은 무엇인가요? 🚀</h2>
+<p><strong>이제 SuperClaude가 설치되었습니다 (쉬웠죠?):</strong></p>
+<ol>
+<li><strong>그냥 사용 시작</strong> - <code>/analyze some-file.js</code> 또는 <code>/build</code>를 시도하고 무슨 일이 일어나는지 보세요 ✨</li>
+<li><strong>학습에 스트레스 받지 마세요</strong> - SuperClaude는 보통 당신이 필요한 것을 알아냅니다</li>
+<li><strong>자유롭게 실험하세요</strong> - <code>/improve</code> 및 <code>/troubleshoot</code>와 같은 명령어는 꽤 관대합니다</li>
+<li><strong>궁금하면 가이드 읽기</strong> - 방금 무슨 일이 일어났는지 이해하고 싶을 때 <code>Docs/</code>를 확인하세요</li>
+<li><strong>피드백 제공</strong> - 무엇이 작동하고 무엇이 작동하지 않는지 알려주세요</li>
+</ol>
+<p><strong>진짜 비밀</strong>: SuperClaude는 새로운 것을 많이 배우지 않고도 기존 워크플로우를 향상시키도록 설계되었습니다. 일반 Claude Code를 사용하듯이 사용하되, 얼마나 더 똑똑해지는지 주목하세요! 🎯</p>
+<p><strong>아직도 불확실한가요?</strong> <code>/help</code>와 <code>/analyze README.md</code>로 시작해보세요 - 실제로 얼마나 위협적이지 않은지 알게 될 것입니다.</p>
+<hr />
+<h2 id="_35">최종 참고 사항 📝</h2>
+<ul>
+<li><strong>설치는 선택에 따라 1-5분 소요됩니다</strong></li>
+<li><strong>필요한 디스크 공간: 20-100MB</strong> (많지 않음!)</li>
+<li><strong>기존 도구와 함께 작동</strong> - 설정에 방해되지 않습니다</li>
+<li><strong>마음이 바뀌면 쉽게 제거 가능</strong></li>
+<li><strong>커뮤니티 지원</strong> - 우리는 실제로 문제를 읽고 응답합니다</li>
+<li>
+<h3 id="_36">⚠️ 중요 참고</h3>
+<strong>SuperClaude 설치 후.</strong>
+<strong><code>SuperClaude commands</code>, <code>python3 -m SuperClaude commands</code> 또는 <code>python3 SuperClaude commands</code>를 사용할 수 있습니다</strong></li>
+</ul>
+<p>SuperClaude를 사용해 주셔서 감사합니다! 개발 워크플로우가 조금 더 원활해지기를 바랍니다. 🙂</p>
+<hr />
+<p><em>마지막 업데이트: 2024년 7월 - 이 가이드에 잘못되었거나 혼란스러운 점이 있으면 알려주세요!</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.50899def.min.js"></script>
+      
+    
+  </body>
+</html>

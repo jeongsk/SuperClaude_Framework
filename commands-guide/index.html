@@ -1,0 +1,1742 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://jeongsk.github.io/SuperClaude_Framework/commands-guide/">
+      
+      
+        <link rel="prev" href="../superclaude-user-guide/">
+      
+      
+        <link rel="next" href="../flags-guide/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+    
+    
+      
+        <title>명령어 가이드 - SuperClaude 한국어 문서</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#superclaude" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href=".." title="SuperClaude 한국어 문서" class="md-header__button md-logo" aria-label="SuperClaude 한국어 문서" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SuperClaude 한국어 문서
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              명령어 가이드
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  홈
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../superclaude-user-guide/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  SuperClaude 사용자 가이드
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  명령어 가이드
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../flags-guide/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  플래그 가이드
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../personas-guide/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  페르소나 가이드
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../installation-guide/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  설치 가이드
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="SuperClaude 한국어 문서" class="md-nav__button md-logo" aria-label="SuperClaude 한국어 문서" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    SuperClaude 한국어 문서
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    홈
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../superclaude-user-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SuperClaude 사용자 가이드
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    명령어 가이드
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    명령어 가이드
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#-superclaude" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 너무 복잡하게 생각하지 마세요 - SuperClaude가 도와드립니다
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      빠른 "그냥 한번 시도해보세요" 목록 🚀
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      빠른 참조 📋
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      개발 명령어 🔨
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="개발 명령어 🔨">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#workflow-" class="md-nav__link">
+    <span class="md-ellipsis">
+      /workflow - 구현 워크플로우 생성기 🗺️
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implement-" class="md-nav__link">
+    <span class="md-ellipsis">
+      /implement - 기능 구현
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-" class="md-nav__link">
+    <span class="md-ellipsis">
+      /build - 프로젝트 빌드
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#design-" class="md-nav__link">
+    <span class="md-ellipsis">
+      /design - 시스템 및 컴포넌트 설계
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      분석 명령어 🔍
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="분석 명령어 🔍">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#analyze-" class="md-nav__link">
+    <span class="md-ellipsis">
+      /analyze - 코드 분석
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshoot-" class="md-nav__link">
+    <span class="md-ellipsis">
+      /troubleshoot - 문제 조사
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explain-" class="md-nav__link">
+    <span class="md-ellipsis">
+      /explain - 교육적인 설명
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      품질 명령어 ✨
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="품질 명령어 ✨">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#improve-" class="md-nav__link">
+    <span class="md-ellipsis">
+      /improve - 코드 향상
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cleanup-" class="md-nav__link">
+    <span class="md-ellipsis">
+      /cleanup - 기술 부채 감소
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-" class="md-nav__link">
+    <span class="md-ellipsis">
+      /test - 테스팅 및 품질 보증
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      문서화 명령어 📝
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="문서화 명령어 📝">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#document-" class="md-nav__link">
+    <span class="md-ellipsis">
+      /document - 집중 문서화
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      프로젝트 관리 명령어 📊
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="프로젝트 관리 명령어 📊">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estimate-" class="md-nav__link">
+    <span class="md-ellipsis">
+      /estimate - 프로젝트 견적
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-" class="md-nav__link">
+    <span class="md-ellipsis">
+      /task - 장기 프로젝트 관리
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spawn-" class="md-nav__link">
+    <span class="md-ellipsis">
+      /spawn - 복잡한 작업 오케스트레이션
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      버전 관리 명령어 🔄
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="버전 관리 명령어 🔄">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      /git - 향상된 Git 작업
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      유틸리티 명령어 🔧
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="유틸리티 명령어 🔧">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#index-" class="md-nav__link">
+    <span class="md-ellipsis">
+      /index - 명령어 탐색
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#load-" class="md-nav__link">
+    <span class="md-ellipsis">
+      /load - 프로젝트 컨텍스트 로딩
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      명령어 팁 및 패턴 💡
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="명령어 팁 및 패턴 💡">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      효과적인 플래그 조합
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      일반적인 워크플로우
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      명령어 문제 해결
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      최종 참고 사항 📝
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../flags-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    플래그 가이드
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../personas-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    페르소나 가이드
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    설치 가이드
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="superclaude">SuperClaude 명령어 가이드 🛠️</h1>
+<h2 id="-superclaude">💡 너무 복잡하게 생각하지 마세요 - SuperClaude가 도와드립니다</h2>
+<p><strong>이 17개 명령어에 대한 진실</strong>: 모두 외울 필요가 없습니다. 그냥 <code>/sc:analyze</code>나 <code>/sc:implement</code>로 시작해서 어떻게 되는지 보세요!</p>
+<p><strong>보통 이렇게 작동합니다:</strong></p>
+<ul>
+<li>Claude Code에 <code>/</code>를 입력하세요 → 사용 가능한 명령어를 볼 수 있습니다</li>
+<li><code>/sc:analyze</code>, <code>/sc:build</code>, <code>/sc:improve</code> 같은 기본 명령어를 사용하세요</li>
+<li><strong>SuperClaude는 각 상황에 맞는 유용한 도구와 전문가를 선택하려고 노력합니다</strong></li>
+<li>익숙해지면 더 많은 명령어가 유용해집니다</li>
+</ul>
+<p><strong>자동 활성화는 꽤 멋집니다</strong> 🪄 - SuperClaude는 당신이 하려는 일을 감지하고 관련 전문가(보안 전문가, 성능 최적화 전문가 등)를 당신이 관리하지 않아도 활성화하려고 시도합니다. 보통 잘 작동합니다! 😊</p>
+<hr />
+<h2 id="_1">빠른 "그냥 한번 시도해보세요" 목록 🚀</h2>
+<p><strong>여기서 시작하세요</strong> (읽을 필요 없음):</p>
+<pre><code class="language-bash">/sc:help # 사용 가능한 기능 보기
+/sc:analyze src/ # 코드를 스마트하게 분석하려고 시도합니다
+/sc:workflow feature-100-prd.md # PRD로부터 단계별 구현 워크플로우를 생성합니다
+/sc:implement user-auth # 기능과 컴포넌트를 생성합니다 (v2 /build 대체)
+/sc:build # 지능적인 프로젝트 빌드를 시도합니다
+/sc:improve messy-file.js # 코드를 정리하려고 시도합니다
+/sc:troubleshoot &quot;error&quot; # 문제 해결을 돕습니다
+</code></pre>
+<p><strong>솔직히 이 정도면 시작하기에 충분합니다.</strong> 아래의 나머지 내용은 다른 어떤 도구들이 있는지 궁금해질 때를 위한 것입니다. 🛠️</p>
+<hr />
+<p>모든 16개 SuperClaude 슬래시 명령어에 대한 실용적인 가이드입니다. 어떤 것이 잘 작동하고 어떤 것이 아직 미흡한지에 대해 솔직하게 알려드립니다.</p>
+<h2 id="_2">빠른 참조 📋</h2>
+<p><em>(이것을 외울 필요는 없습니다 - 그냥 유용해 보이는 것을 선택하세요)</em></p>
+<table>
+<thead>
+<tr>
+<th>명령어</th>
+<th>목적</th>
+<th>자동 활성화</th>
+<th>가장 적합한 용도</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/sc:analyze</code></td>
+<td>스마트 코드 분석</td>
+<td>보안/성능 전문가</td>
+<td>문제 찾기, 코드베이스 이해</td>
+</tr>
+<tr>
+<td><code>/sc:build</code></td>
+<td>지능적인 빌드</td>
+<td>프론트엔드/백엔드 전문가</td>
+<td>컴파일, 번들링, 배포 준비</td>
+</tr>
+<tr>
+<td><code>/sc:implement</code></td>
+<td>기능 구현</td>
+<td>특정 분야 전문가</td>
+<td>기능, 컴포넌트, API, 서비스 생성</td>
+</tr>
+<tr>
+<td><code>/sc:improve</code></td>
+<td>자동 코드 정리</td>
+<td>품질 전문가</td>
+<td>리팩토링, 최적화, 품질 수정</td>
+</tr>
+<tr>
+<td><code>/sc:troubleshoot</code></td>
+<td>문제 조사</td>
+<td>디버그 전문가</td>
+<td>디버깅, 문제 조사</td>
+</tr>
+<tr>
+<td><code>/sc:test</code></td>
+<td>스마트 테스팅</td>
+<td>QA 전문가</td>
+<td>테스트 실행, 커버리지 분석</td>
+</tr>
+<tr>
+<td><code>/sc:document</code></td>
+<td>자동 문서화</td>
+<td>글쓰기 전문가</td>
+<td>README 파일, 코드 주석, 가이드</td>
+</tr>
+<tr>
+<td><code>/sc:git</code></td>
+<td>향상된 git 워크플로우</td>
+<td>DevOps 전문가</td>
+<td>스마트 커밋, 브랜치 관리</td>
+</tr>
+<tr>
+<td><code>/sc:design</code></td>
+<td>시스템 설계 도움</td>
+<td>아키텍처 전문가</td>
+<td>아키텍처 계획, API 설계</td>
+</tr>
+<tr>
+<td><code>/sc:explain</code></td>
+<td>학습 보조</td>
+<td>교육 전문가</td>
+<td>개념 학습, 코드 이해</td>
+</tr>
+<tr>
+<td><code>/sc:cleanup</code></td>
+<td>부채 감소</td>
+<td>리팩토링 전문가</td>
+<td>죽은 코드 제거, 파일 정리</td>
+</tr>
+<tr>
+<td><code>/sc:load</code></td>
+<td>컨텍스트 이해</td>
+<td>분석 전문가</td>
+<td>프로젝트 분석, 코드베이스 이해</td>
+</tr>
+<tr>
+<td><code>/sc:estimate</code></td>
+<td>스마트 견적</td>
+<td>계획 전문가</td>
+<td>시간/노력 계획, 복잡도 분석</td>
+</tr>
+<tr>
+<td><code>/sc:spawn</code></td>
+<td>복잡한 워크플로우</td>
+<td>오케스트레이션 시스템</td>
+<td>다단계 작업, 워크플로우 자동화</td>
+</tr>
+<tr>
+<td><code>/sc:task</code></td>
+<td>프로젝트 관리</td>
+<td>계획 시스템</td>
+<td>장기 기능 계획, 작업 추적</td>
+</tr>
+<tr>
+<td><code>/sc:workflow</code></td>
+<td>구현 계획</td>
+<td>워크플로우 시스템</td>
+<td>PRD로부터 단계별 워크플로우 생성</td>
+</tr>
+<tr>
+<td><code>/sc:index</code></td>
+<td>명령어 탐색</td>
+<td>도움말 시스템</td>
+<td>작업에 맞는 명령어 찾기</td>
+</tr>
+</tbody>
+</table>
+<p><strong>프로 팁</strong>: 그냥 유용해 보이는 것을 시도해보세요. SuperClaude는 보통 각 상황에 맞는 유용한 전문가와 도구를 활성화하려고 노력합니다! 🎯</p>
+<h2 id="_3">개발 명령어 🔨</h2>
+<h3 id="workflow-"><code>/workflow</code> - 구현 워크플로우 생성기 🗺️</h3>
+<p><strong>기능</strong>: PRD와 기능 요구사항을 분석하여 포괄적인 단계별 구현 워크플로우를 생성합니다.</p>
+<p><strong>유용한 점</strong>: PRD를 가져와 전문가 지침, 의존성 매핑, 작업 오케스트레이션을 포함한 구조화된 구현 계획으로 분해합니다! 🎯</p>
+<p><strong>사용 시기</strong>:
+- PRD나 명세서로부터 새로운 기능을 시작할 때
+- 명확한 구현 로드맵이 필요할 때
+- 구현 전략에 대한 전문가 지침을 원할 때
+- 여러 의존성을 가진 복잡한 기능을 계획할 때</p>
+<p><strong>마법</strong>: 기능 요구사항에 따라 적절한 전문가 페르소나(아키텍트, 보안, 프론트엔드, 백엔드)와 MCP 서버(패턴을 위한 Context7, 복잡한 분석을 위한 Sequential)를 자동으로 활성화합니다.</p>
+<p><strong>예시</strong>:</p>
+<pre><code class="language-bash">/sc:workflow docs/feature-100-prd.md --strategy systematic --c7 --sequential
+/sc:workflow &quot;user authentication system&quot; --persona security --output detailed
+/sc:workflow payment-api --strategy mvp --risks --dependencies
+</code></pre>
+<p><strong>결과물</strong>:</p>
+<ul>
+<li><strong>로드맵 형식</strong>: 타임라인이 포함된 단계별 구현 계획</li>
+<li><strong>작업 형식</strong>: 조직화된 에픽, 스토리, 실행 가능한 작업</li>
+<li><strong>상세 형식</strong>: 시간 추정치가 포함된 단계별 지침</li>
+<li><strong>위험 평가</strong>: 잠재적 문제 및 완화 전략</li>
+<li><strong>의존성 매핑</strong>: 내부 및 외부 의존성</li>
+<li><strong>전문가 지침</strong>: 특정 분야의 모범 사례 및 패턴</li>
+</ul>
+<h3 id="implement-"><code>/implement</code> - 기능 구현</h3>
+<p><strong>기능</strong>: 지능적인 전문가 활성화를 통해 기능, 컴포넌트, 기능을 구현합니다.</p>
+<p><strong>유용한 점</strong>: SuperClaude는 구현하려는 내용에 따라 적절한 전문가(프론트엔드, 백엔드, 보안)와 도구를 자동으로 활성화합니다! 🎯</p>
+<p><strong>사용 시기</strong>:</p>
+<ul>
+<li>새로운 기능이나 컴포넌트를 생성할 때 (v2의 <code>/build</code> 기능 대체)</li>
+<li>API, 서비스, 모듈을 구현할 때</li>
+<li>최신 프레임워크로 UI 컴포넌트를 빌드할 때</li>
+<li>비즈니스 로직과 통합을 개발할 때</li>
+</ul>
+<p><strong>기본 구문</strong>:</p>
+<pre><code class="language-bash">/sc:implement user authentication system # 전체 기능 구현
+/sc:implement --type component LoginForm # 특정 컴포넌트 생성
+/sc:implement --type api user-management # API 엔드포인트 빌드
+/sc:implement --framework react dashboard # 프레임워크별 구현
+</code></pre>
+<p><strong>유용한 플래그</strong>:</p>
+<ul>
+<li><code>--type component|api|service|feature|module</code> - 구현 유형</li>
+<li><code>--framework react|vue|express|django|etc</code> - 대상 프레임워크</li>
+<li><code>--safe</code> - 보수적인 구현 접근 방식</li>
+<li><code>--iterative</code> - 검증을 통한 단계별 개발</li>
+<li><code>--with-tests</code> - 테스트 구현 포함</li>
+<li><code>--documentation</code> - 코드와 함께 문서 생성</li>
+</ul>
+<p><strong>실제 예시</strong>:</p>
+<pre><code class="language-bash">/sc:implement user authentication --type feature --with-tests
+/sc:implement dashboard component --type component --framework react
+/sc:implement REST API for orders --type api --safe
+/sc:implement payment processing --type service --iterative
+/sc:implement search functionality --framework vue --documentation
+</code></pre>
+<p><strong>자동 활성화 패턴</strong>:</p>
+<ul>
+<li><strong>프론트엔드</strong>: UI 컴포넌트, React/Vue/Angular → 프론트엔드 페르소나 + Magic MCP</li>
+<li><strong>백엔드</strong>: API, 서비스, 데이터베이스 → 백엔드 페르소나 + Context7</li>
+<li><strong>보안</strong>: 인증, 결제, 민감 데이터 → 보안 페르소나 + 유효성 검사</li>
+<li><strong>복잡한 기능</strong>: 다단계 구현 → Sequential MCP + 아키텍트 페르소나</li>
+</ul>
+<p><strong>주의사항</strong>:</p>
+<ul>
+<li>더 나은 결과를 위해 <code>--type</code>을 지정하세요 (component vs service vs feature)</li>
+<li>특정 기술 스택으로 작업할 때 <code>--framework</code>를 사용하세요</li>
+<li>프로덕션 코드에는 <code>--safe</code>를, 복잡한 기능에는 <code>--iterative</code>를 시도해보세요</li>
+<li>기억하세요: 이것은 실제 코드 구현을 위해 v2의 <code>/build</code>를 대체합니다</li>
+</ul>
+<hr />
+<h3 id="build-"><code>/build</code> - 프로젝트 빌드</h3>
+<p><strong>기능</strong>: 스마트한 오류 처리로 프로젝트를 빌드, 컴파일, 패키징합니다.</p>
+<p><strong>쉬운 방법</strong>: 그냥 <code>/sc:build</code>를 입력하면 SuperClaude가 빌드 시스템을 파악하려고 시도합니다! 🎯</p>
+<p><strong>사용 시기</strong>:</p>
+<ul>
+<li>프로젝트를 컴파일/번들해야 할 때 (그냥 <code>/sc:build</code>를 시도하세요)</li>
+<li>빌드 프로세스가 실패하고 디버깅에 도움이 필요할 때</li>
+<li>빌드 최적화를 설정할 때 (필요한 것을 감지하려고 시도합니다)</li>
+<li>배포를 준비할 때</li>
+</ul>
+<p><strong>기본 구문</strong>:</p>
+<pre><code class="language-bash">/sc:build # 현재 프로젝트 빌드
+/sc:build --type prod # 프로덕션 빌드
+/sc:build --clean # 클린 빌드 (오래된 아티팩트 제거)
+/sc:build --optimize # 최적화 활성화
+/sc:build src/ # 특정 디렉토리 빌드
+</code></pre>
+<p><strong>유용한 플래그</strong>:</p>
+<ul>
+<li><code>--type dev|prod|test</code> - 빌드 유형</li>
+<li><code>--clean</code> - 빌드 전 정리</li>
+<li><code>--optimize</code> - 빌드 최적화 활성화</li>
+<li><code>--verbose</code> - 상세 빌드 출력 표시</li>
+</ul>
+<p><strong>실제 예시</strong>:</p>
+<pre><code class="language-bash">/sc:build --type prod --optimize # 최적화된 프로덕션 빌드
+/sc:build --clean --verbose # 상세 출력을 포함한 클린 빌드
+/sc:build src/components # 컴포넌트 폴더만 빌드
+</code></pre>
+<p><strong>주의사항</strong>:</p>
+<ul>
+<li>일반적인 빌드 도구(npm, webpack 등)에서 가장 잘 작동합니다</li>
+<li>매우 맞춤화된 빌드 설정에서는 어려움을 겪을 수 있습니다</li>
+<li>빌드 도구가 PATH에 있는지 확인하세요</li>
+</ul>
+<hr />
+<h3 id="design-"><code>/design</code> - 시스템 및 컴포넌트 설계</h3>
+<p><strong>기능</strong>: 시스템 아키텍처, API 설계, 컴포넌트 명세서를 생성합니다.</p>
+<p><strong>사용 시기</strong>:</p>
+<ul>
+<li>새로운 기능이나 시스템을 계획할 때</li>
+<li>API나 데이터베이스 설계가 필요할 때</li>
+<li>컴포넌트 아키텍처를 생성할 때</li>
+<li>시스템 관계를 문서화할 때</li>
+</ul>
+<p><strong>기본 구문</strong>:</p>
+<pre><code class="language-bash">/sc:design user-auth-system # 사용자 인증 시스템 설계
+/sc:design --type api auth # API 부분만 설계
+/sc:design --format spec payment # 공식 명세서 생성
+</code></pre>
+<p><strong>유용한 플래그</strong>:</p>
+<ul>
+<li><code>--type architecture|api|component|database</code> - 설계 초점</li>
+<li><code>--format diagram|spec|code</code> - 출력 형식</li>
+<li><code>--iterative</code> - 반복을 통해 설계 구체화</li>
+</ul>
+<p><strong>실제 예시</strong>:</p>
+<pre><code class="language-bash">/sc:design --type api user-management # 사용자 관리 API 설계
+/sc:design --format spec chat-system # 채팅 시스템 명세서 생성
+/sc:design --type database ecommerce # 데이터베이스 스키마 설계
+</code></pre>
+<p><strong>주의사항</strong>:</p>
+<ul>
+<li>코드 생성보다는 개념적입니다</li>
+<li>출력 품질은 요구사항을 얼마나 명확하게 설명하는지에 따라 달라집니다</li>
+<li>구현 세부사항보다는 계획 단계에 좋습니다</li>
+</ul>
+<h2 id="_4">분석 명령어 🔍</h2>
+<h3 id="analyze-"><code>/analyze</code> - 코드 분석</h3>
+<p><strong>기능</strong>: 코드 품질, 보안, 성능, 아키텍처에 대한 포괄적인 분석.</p>
+<p><strong>유용한 점</strong>: SuperClaude는 어떤 종류의 분석이 필요한지 감지하려고 시도하며 보통 관련 전문가를 선택합니다! 🔍</p>
+<p><strong>사용 시기</strong>:</p>
+<ul>
+<li>익숙하지 않은 코드베이스를 이해할 때 (어떤 폴더든 가리키기만 하면 됩니다)</li>
+<li>보안 취약점을 찾을 때 (보통 보안 전문가가 개입합니다)</li>
+<li>성능 병목 현상을 찾을 때 (보통 성능 전문가가 돕습니다)</li>
+<li>코드 품질을 평가할 때 (보통 품질 전문가가 담당합니다)</li>
+</ul>
+<p><strong>기본 구문</strong>:</p>
+<pre><code class="language-bash">/sc:analyze src/ # 전체 src 디렉토리 분석
+/sc:analyze --focus security # 보안 문제에 집중
+/sc:analyze --depth deep app.js # 특정 파일 심층 분석
+</code></pre>
+<p><strong>유용한 플래그</strong>:</p>
+<ul>
+<li><code>--focus quality|security|performance|architecture</code> - 분석 초점</li>
+<li><code>--depth quick|deep</code> - 분석 깊이</li>
+<li><code>--format text|json|report</code> - 출력 형식</li>
+</ul>
+<p><strong>실제 예시</strong>:</p>
+<pre><code class="language-bash">/sc:analyze --focus security --depth deep # 심층 보안 분석
+/sc:analyze --focus performance src/api/ # API 성능 분석
+/sc:analyze --format report . # 분석 보고서 생성
+</code></pre>
+<p><strong>주의사항</strong>
+:
+- 큰 코드베이스에서는 시간이 걸릴 수 있습니다
+- 보안 분석은 꽤 좋지만, 성능 분석은 다양합니다
+- 일반적인 언어(JS, Python 등)에서 가장 잘 작동합니다</p>
+<hr />
+<h3 id="troubleshoot-"><code>/troubleshoot</code> - 문제 조사</h3>
+<p><strong>기능</strong>: 체계적인 디버깅 및 문제 조사.</p>
+<p><strong>사용 시기</strong>:</p>
+<ul>
+<li>무언가 고장 났는데 이유를 모를 때</li>
+<li>체계적인 디버깅 접근 방식이 필요할 때</li>
+<li>오류 메시지가 혼란스러울 때</li>
+<li>성능 문제 조사</li>
+</ul>
+<p><strong>기본 구문</strong>:</p>
+<pre><code class="language-bash">/sc:troubleshoot &quot;login not working&quot; # 로그인 문제 조사
+/sc:troubleshoot --logs error.log # 오류 로그 분석
+/sc:troubleshoot performance # 성능 문제 해결
+</code></pre>
+<p><strong>유용한 플래그</strong>:</p>
+<ul>
+<li><code>--logs &lt;file&gt;</code> - 로그 파일 분석 포함</li>
+<li><code>--systematic</code> - 구조화된 디버깅 접근 방식 사용</li>
+<li><code>--focus network|database|frontend</code> - 초점 영역</li>
+</ul>
+<p><strong>실제 예시</strong>:</p>
+<pre><code class="language-bash">/sc:troubleshoot &quot;API returning 500&quot; --logs server.log
+/sc:troubleshoot --focus database &quot;slow queries&quot;
+/sc:troubleshoot &quot;build failing&quot; --systematic
+</code></pre>
+<p><strong>주의사항</strong>:</p>
+<ul>
+<li>구체적인 오류 설명과 함께 더 잘 작동합니다</li>
+<li>가능하면 관련 오류 메시지와 로그를 포함하세요</li>
+<li>처음에는 명백한 것을 제안할 수 있습니다 (보통 좋은 일입니다!)</li>
+</ul>
+<hr />
+<h3 id="explain-"><code>/explain</code> - 교육적인 설명</h3>
+<p><strong>기능</strong>: 코드, 개념, 기술을 교육적인 방식으로 설명합니다.</p>
+<p><strong>사용 시기</strong>:</p>
+<ul>
+<li>새로운 기술이나 패턴을 배울 때</li>
+<li>복잡한 코드를 이해할 때</li>
+<li>팀원들을 위한 명확한 설명이 필요할 때</li>
+<li>까다로운 개념을 문서화할 때</li>
+</ul>
+<p><strong>기본 구문</strong>:</p>
+<pre><code class="language-bash">/sc:explain async/await # async/await 개념 설명
+/sc:explain --code src/utils.js # 특정 코드 파일 설명
+/sc:explain --beginner React hooks # 초보자 친화적인 설명
+</code></pre>
+<p><strong>유용한 플래그</strong>:</p>
+<ul>
+<li><code>--beginner</code> - 더 간단한 설명</li>
+<li><code>--advanced</code> - 기술적 깊이</li>
+<li><code>--code &lt;file&gt;</code> - 특정 코드 설명</li>
+<li><code>--examples</code> - 실제 예시 포함</li>
+</ul>
+<p><strong>실제 예시</strong>:</p>
+<pre><code class="language-bash">/sc:explain --beginner &quot;what is REST API&quot;
+/sc:explain --code src/auth.js --advanced
+/sc:explain --examples &quot;React context patterns&quot;
+</code></pre>
+<p><strong>주의사항</strong>:</p>
+<ul>
+<li>잘 알려진 개념에 대해서는 훌륭하지만, 매우 전문적인 주제에 대해서는 어려움을 겪을 수 있습니다</li>
+<li>"이 코드베이스를 설명해줘"와 같은 모호한 질문보다는 구체적인 질문에 더 좋습니다</li>
+<li>당신의 경험 수준에 대한 컨텍스트를 포함하세요</li>
+</ul>
+<h2 id="_5">품질 명령어 ✨</h2>
+<h3 id="improve-"><code>/improve</code> - 코드 향상</h3>
+<p><strong>기능</strong>: 코드 품질, 성능, 유지보수성에 대한 체계적인 개선.</p>
+<p><strong>사용 시기</strong>:</p>
+<ul>
+<li>지저분한 코드 리팩토링</li>
+<li>성능 최적화</li>
+<li>모범 사례 적용</li>
+<li>오래된 코드 현대화</li>
+</ul>
+<p><strong>기본 구문</strong>:</p>
+<pre><code class="language-bash">/sc:improve src/legacy/ # 레거시 코드 개선
+/sc:improve --type performance # 성능에 집중
+/sc:improve --safe src/utils.js # 안전하고 위험이 낮은 개선만
+</code></pre>
+<p><strong>유용한 플래그</strong>:</p>
+<ul>
+<li><code>--type quality|performance|maintainability|style</code> - 개선 초점</li>
+<li><code>--safe</code> - 위험이 낮은 변경만 적용</li>
+<li><code>--preview</code> - 변경될 내용을 실행하지 않고 보여줌</li>
+</ul>
+<p><strong>실제 예시</strong>:</p>
+<pre><code class="language-bash">/sc:improve --type performance --safe src/api/
+/sc:improve --preview src/components/LegacyComponent.js
+/sc:improve --type style . --safe
+</code></pre>
+<p><strong>주의사항</strong>:</p>
+<ul>
+<li>항상 <code>--preview</code>를 먼저 사용하여 변경하려는 내용을 확인하세요</li>
+<li><code>--safe</code>는 당신의 친구입니다 - 위험한 리팩토링을 방지합니다</li>
+<li>전체 코드베이스보다는 작은 파일/모듈에서 가장 잘 작동합니다</li>
+</ul>
+<hr />
+<h3 id="cleanup-"><code>/cleanup</code> - 기술 부채 감소</h3>
+<p><strong>기능</strong>: 죽은 코드, 사용하지 않는 임포트를 제거하고 파일 구조를 정리합니다.</p>
+<p><strong>사용 시기</strong>:</p>
+<ul>
+<li>코드베이스가 어수선하게 느껴질 때</li>
+<li>사용하지 않는 임포트/변수가 많을 때</li>
+<li>파일 구성이 지저분할 때</li>
+<li>주요 리팩토링 전</li>
+</ul>
+<p><strong>기본 구문</strong>:</p>
+<pre><code class="language-bash">/sc:cleanup src/ # src 디렉토리 정리
+/sc:cleanup --dead-code # 죽은 코드 제거에 집중
+/sc:cleanup --imports package.js # 특정 파일의 임포트 정리
+</code></pre>
+<p><strong>유용한 플래그</strong>:</p>
+<ul>
+<li><code>--dead-code</code> - 사용하지 않는 코드 제거</li>
+<li><code>--imports</code> - 임포트 문 정리</li>
+<li><code>--files</code> - 파일 구조 재구성</li>
+<li><code>--safe</code> - 보수적인 정리만</li>
+</ul>
+<p><strong>실제 예시</strong>:</p>
+<pre><code class="language-bash">/sc:cleanup --dead-code --safe src/utils/
+/sc:cleanup --imports src/components/
+/sc:cleanup --files . --safe
+</code></pre>
+<p><strong>주의사항</strong>:</p>
+<ul>
+<li>공격적일 수 있으므로 항상 변경 사항을 신중하게 검토하세요</li>
+<li>모든 죽은 코드를 잡지 못할 수 있습니다 (특히 동적 임포트)</li>
+<li>전체 프로젝트보다는 작은 섹션에서 실행하는 것이 좋습니다</li>
+</ul>
+<hr />
+<h3 id="test-"><code>/test</code> - 테스팅 및 품질 보증</h3>
+<p><strong>기능</strong>: 테스트를 실행하고, 커버리지 보고서를 생성하며, 테스트 품질을 유지합니다.</p>
+<p><strong>사용 시기</strong>:</p>
+<ul>
+<li>테스트 스위트 실행</li>
+<li>테스트 커버리지 확인</li>
+<li>테스트 보고서 생성</li>
+<li>지속적인 테스팅 설정</li>
+</ul>
+<p><strong>기본 구문</strong>:</p>
+<pre><code class="language-bash">/sc:test # 모든 테스트 실행
+/sc:test --type unit # 단위 테스트만 실행
+/sc:test --coverage # 커버리지 보고서 생성
+/sc:test --watch src/ # 개발을 위한 감시 모드
+</code></pre>
+<p><strong>유용한 플래그</strong>:</p>
+<ul>
+<li><code>--type unit|integration|e2e|all</code> - 테스트 유형</li>
+<li><code>--coverage</code> - 커버리지 보고서 생성</li>
+<li><code>--watch</code> - 감시 모드에서 테스트 실행</li>
+<li><code>--fix</code> - 실패하는 테스트를 자동으로 수정하려고 시도</li>
+</ul>
+<p><strong>실제 예시</strong>:</p>
+<pre><code class="language-bash">/sc:test --type unit --coverage
+/sc:test --watch src/components/
+/sc:test --type e2e --fix
+</code></pre>
+<p><strong>주의사항</strong>:</p>
+<ul>
+<li>테스트 프레임워크가 제대로 구성되어 있어야 합니다</li>
+<li>커버리지 보고서는 기존 테스트 설정에 따라 달라집니다</li>
+<li><code>--fix</code>는 실험적입니다 - 변경되는 내용을 검토하세요</li>
+</ul>
+<h2 id="_6">문서화 명령어 📝</h2>
+<h3 id="document-"><code>/document</code> - 집중 문서화</h3>
+<p><strong>기능</strong>: 특정 컴포넌트, 함수, 기능에 대한 문서를 생성합니다.</p>
+<p><strong>사용 시기</strong>:</p>
+<ul>
+<li>README 파일이 필요할 때</li>
+<li>API 문서 작성</li>
+<li>코드 주석 추가</li>
+<li>사용자 가이드 생성</li>
+</ul>
+<p><strong>기본 구문</strong>:</p>
+<pre><code class="language-bash">/sc:document src/api/auth.js # 인증 모듈 문서화
+/sc:document --type api # API 문서화
+/sc:document --style brief README # 간략한 README 파일
+</code></pre>
+<p><strong>유용한 플래그</strong>:</p>
+<ul>
+<li><code>--type inline|external|api|guide</code> - 문서 유형</li>
+<li><code>--style brief|detailed</code> - 상세 수준</li>
+<li><code>--template</code> - 특정 문서 템플릿 사용</li>
+</ul>
+<p><strong>실제 예시</strong>:</p>
+<pre><code class="language-bash">/sc:document --type api src/controllers/
+/sc:document --style detailed --type guide user-onboarding
+/sc:document --type inline src/utils/helpers.js
+</code></pre>
+<p><strong>주의사항</strong>:</p>
+<ul>
+<li>전체 프로젝트보다는 특정 파일/함수에서 더 좋습니다</li>
+<li>품질은 코드가 얼마나 잘 구조화되어 있는지에 따라 달라집니다</li>
+<li>프로젝트의 문서 스타일에 맞게 일부 편집이 필요할 수 있습니다</li>
+</ul>
+<h2 id="_7">프로젝트 관리 명령어 📊</h2>
+<h3 id="estimate-"><code>/estimate</code> - 프로젝트 견적</h3>
+<p><strong>기능</strong>: 개발 작업에 대한 시간, 노력, 복잡도를 추정합니다.</p>
+<p><strong>사용 시기</strong>:</p>
+<ul>
+<li>새로운 기능 계획</li>
+<li>스프린트 계획</li>
+<li>프로젝트 복잡도 이해</li>
+<li>리소스 할당</li>
+</ul>
+<p><strong>기본 구문</strong>:</p>
+<pre><code class="language-bash">/sc:estimate &quot;add user authentication&quot; # 인증 기능 견적
+/sc:estimate --detailed shopping-cart # 상세 내역
+/sc:estimate --complexity user-dashboard # 복잡도 분석
+</code></pre>
+<p><strong>유용한 플래그</strong>:</p>
+<ul>
+<li><code>--detailed</code> - 작업의 상세 내역</li>
+<li><code>--complexity</code> - 기술적 복잡도에 집중</li>
+<li><code>--team-size &lt;n&gt;</code> - 견적에 팀 규모 고려</li>
+</ul>
+<p><strong>실제 예시</strong>:</p>
+<pre><code class="language-bash">/sc:estimate --detailed &quot;implement payment system&quot;
+/sc:estimate --complexity --team-size 3 &quot;migrate to microservices&quot;
+/sc:estimate &quot;add real-time chat&quot; --detailed
+</code></pre>
+<p><strong>주의사항</strong>:</p>
+<ul>
+<li>견적은 대략적입니다 - 절대적인 것이 아니라 시작점으로 사용하세요</li>
+<li>명확하고 구체적인 기능 설명과 함께 더 잘 작동합니다</li>
+<li>기술 스택에 대한 팀의 경험을 고려하세요</li>
+</ul>
+<hr />
+<h3 id="task-"><code>/task</code> - 장기 프로젝트 관리</h3>
+<p><strong>기능</strong>: 복잡하고 여러 세션에 걸친 개발 작업과 기능을 관리합니다.</p>
+<p><strong>사용 시기</strong>:</p>
+<ul>
+<li>며칠/몇 주가 걸리는 기능 계획</li>
+<li>대규모 프로젝트 분해</li>
+<li>여러 세션에 걸친 진행 상황 추적</li>
+<li>팀 작업 조정</li>
+</ul>
+<p><strong>기본 구문</strong>:</p>
+<pre><code class="language-bash">/sc:task create &quot;implement user dashboard&quot; # 새 작업 생성
+/sc:task status # 작업 상태 확인
+/sc:task breakdown &quot;payment integration&quot; # 하위 작업으로 분해
+</code></pre>
+<p><strong>유용한 플래그</strong>:</p>
+<ul>
+<li><code>create</code> - 새로운 장기 작업 생성</li>
+<li><code>status</code> - 현재 작업 상태 확인</li>
+<li><code>breakdown</code> - 큰 작업을 작은 작업으로 분해</li>
+<li><code>--priority high|medium|low</code> - 작업 우선순위 설정</li>
+</ul>
+<p><strong>실제 예시</strong>:</p>
+<pre><code class="language-bash">/sc:task create &quot;migrate from REST to GraphQL&quot; --priority high
+/sc:task breakdown &quot;e-commerce checkout flow&quot;
+/sc:task status
+</code></pre>
+<p><strong>주의사항</strong>:</p>
+<ul>
+<li>아직 실험적입니다 - 세션 간에 안정적으로 지속되지 않을 때가 있습니다 😅</li>
+<li>실제 프로젝트 관리보다는 계획에 더 좋습니다</li>
+<li>요구사항에 대해 구체적일 때 가장 잘 작동합니다</li>
+</ul>
+<hr />
+<h3 id="spawn-"><code>/spawn</code> - 복잡한 작업 오케스트레이션</h3>
+<p><strong>기능</strong>: 복잡하고 다단계인 작업과 워크플로우를 조정합니다.</p>
+<p><strong>사용 시기</strong>:</p>
+<ul>
+<li>여러 도구/시스템을 포함하는 작업</li>
+<li>병렬 워크플로우 조정</li>
+<li>복잡한 배포 프로세스</li>
+<li>다단계 데이터 처리</li>
+</ul>
+<p><strong>기본 구문</strong>:</p>
+<pre><code class="language-bash">/sc:spawn deploy-pipeline # 배포 오케스트레이션
+/sc:spawn --parallel migrate-data # 병렬 데이터 마이그레이션
+/sc:spawn setup-dev-environment # 복잡한 개발 환경 설정
+</code></pre>
+<p><strong>유용한 플래그</strong>:</p>
+<ul>
+<li><code>--parallel</code> - 가능할 때 병렬로 작업 실행</li>
+<li><code>--sequential</code> - 순차적 실행 강제</li>
+<li><code>--monitor</code> - 작업 진행 상황 모니터링</li>
+</ul>
+<p><strong>실제 예시</strong>:</p>
+<pre><code class="language-bash">/sc:spawn --parallel &quot;test and deploy to staging&quot;
+/sc:spawn setup-ci-cd --monitor
+/sc:spawn --sequential database-migration
+</code></pre>
+<p><strong>주의사항</strong>:</p>
+<ul>
+<li>가장 복잡한 명령어 - 약간의 미흡함을 예상하세요</li>
+<li>임시 작업보다는 잘 정의된 워크플로우에 더 좋습니다</li>
+<li>제대로 작동하려면 여러 번의 반복이 필요할 수 있습니다</li>
+</ul>
+<h2 id="_8">버전 관리 명령어 🔄</h2>
+<h3 id="git-git"><code>/git</code> - 향상된 Git 작업</h3>
+<p><strong>기능</strong>: 지능적인 커밋 메시지와 워크플로우 최적화를 통한 Git 작업.</p>
+<p><strong>사용 시기</strong>:</p>
+<ul>
+<li>더 나은 메시지로 커밋 만들기</li>
+<li>브랜치 관리</li>
+<li>복잡한 git 워크플로우</li>
+<li>Git 문제 해결</li>
+</ul>
+<p><strong>기본 구문</strong>:</p>
+<pre><code class="language-bash">/sc:git commit # 자동 생성된 메시지로 스마트 커밋
+/sc:git --smart-commit add . # 스마트 메시지로 추가 및 커밋
+/sc:git branch feature/new-auth # 새 브랜치 생성 및 전환
+</code></pre>
+<p><strong>유용한 플래그</strong>:
+- <code>--smart-commit</code> - 지능적인 커밋 메시지 생성
+- <code>--branch-strategy</code> - 브랜치 이름 규칙 적용
+- <code>--interactive</code> - 복잡한 작업을 위한 대화형 모드</p>
+<p><strong>실제 예시</strong>:</p>
+<pre><code class="language-bash">/sc:git --smart-commit &quot;fixed login bug&quot;
+/sc:git branch feature/user-dashboard --branch-strategy
+/sc:git merge develop --interactive
+</code></pre>
+<p><strong>주의사항</strong>:</p>
+<ul>
+<li>스마트 커밋 메시지는 꽤 좋지만 검토하세요</li>
+<li>일반적인 git 워크플로우를 따르고 있다고 가정합니다</li>
+<li>나쁜 git 습관을 고쳐주지는 않습니다 - 단지 더 쉽게 만들어 줄 뿐입니다</li>
+</ul>
+<h2 id="_9">유틸리티 명령어 🔧</h2>
+<h3 id="index-"><code>/index</code> - 명령어 탐색</h3>
+<p><strong>기능</strong>: 작업에 맞는 올바른 명령어를 찾는 데 도움을 줍니다.</p>
+<p><strong>사용 시기</strong>:</p>
+<ul>
+<li>어떤 명령어를 사용해야 할지 모를 때</li>
+<li>사용 가능한 명령어 탐색</li>
+<li>명령어 기능에 대해 배울 때</li>
+</ul>
+<p><strong>기본 구문</strong>:</p>
+<pre><code class="language-bash">/sc:index # 모든 명령어 나열
+/sc:index testing # 테스팅과 관련된 명령어 찾기
+/sc:index --category analysis # 분석 카테고리의 명령어
+</code></pre>
+<p><strong>유용한 플래그</strong>:</p>
+<ul>
+<li><code>--category &lt;cat&gt;</code> - 명령어 카테고리별 필터링</li>
+<li><code>--search &lt;term&gt;</code> - 명령어 설명 검색</li>
+</ul>
+<p><strong>실제 예시</strong>:</p>
+<pre><code class="language-bash">/sc:index --search &quot;performance&quot;
+/sc:index --category quality
+/sc:index git
+</code></pre>
+<p><strong>주의사항</strong>:</p>
+<ul>
+<li>간단하지만 발견에 유용합니다</li>
+<li>16개 명령어를 모두 기억하려고 노력하는 것보다 낫습니다</li>
+</ul>
+<hr />
+<h3 id="load-"><code>/load</code> - 프로젝트 컨텍스트 로딩</h3>
+<p><strong>기능</strong>: 더 나은 이해를 위해 프로젝트 컨텍스트를 로드하고 분석합니다.</p>
+<p><strong>사용 시기</strong>:</p>
+<ul>
+<li>익숙하지 않은 프로젝트에서 작업을 시작할 때</li>
+<li>프로젝트 구조를 이해해야 할 때</li>
+<li>주요 변경 전</li>
+<li>팀원 온보딩</li>
+</ul>
+<p><strong>기본 구문</strong>:</p>
+<pre><code class="language-bash">/sc:load # 현재 프로젝트 컨텍스트 로드
+/sc:load src/ # 특정 디렉토리 컨텍스트 로드
+/sc:load --deep # 프로젝트 구조 심층 분석
+</code></pre>
+<p><strong>유용한 플래그</strong>:</p>
+<ul>
+<li><code>--deep</code> - 포괄적인 프로젝트 분석</li>
+<li><code>--focus &lt;area&gt;</code> - 특정 프로젝트 영역에 집중</li>
+<li><code>--summary</code> - 프로젝트 요약 생성</li>
+</ul>
+<p><strong>실제 예시</strong>:</p>
+<pre><code class="language-bash">/sc:load --deep --summary
+/sc:load src/components/ --focus architecture
+/sc:load . --focus dependencies
+</code></pre>
+<p><strong>주의사항</strong>:</p>
+<ul>
+<li>큰 프로젝트에서는 시간이 걸릴 수 있습니다</li>
+<li>개발 중보다는 프로젝트 시작 시에 더 유용합니다</li>
+<li>온보딩에 도움이 되지만 좋은 문서를 대체할 수는 없습니다</li>
+</ul>
+<h2 id="_10">명령어 팁 및 패턴 💡</h2>
+<h3 id="_11">효과적인 플래그 조합</h3>
+<pre><code class="language-bash"># 안전한 개선 워크플로우
+/sc:improve --preview src/component.js # 변경될 내용 보기
+/sc:improve --safe src/component.js # 안전한 변경만 적용
+
+# 포괄적인 분석
+/sc:analyze --focus security --depth deep
+/sc:test --coverage
+/sc:document --type api
+
+# 스마트 git 워크플로우
+/sc:git add .
+/sc:git --smart-commit --branch-strategy
+
+# 프로젝트 이해 워크플로우
+/sc:load --deep --summary
+/sc:analyze --focus architecture
+/sc:document --type guide
+</code></pre>
+<h3 id="_12">일반적인 워크플로우</h3>
+<p><strong>새 프로젝트 온보딩</strong>:</p>
+<pre><code class="language-bash">/sc:load --deep --summary
+/sc:analyze --focus architecture
+/sc:test --coverage
+/sc:document README
+</code></pre>
+<p><strong>버그 조사</strong>:</p>
+<pre><code class="language-bash">/sc:troubleshoot &quot;specific error message&quot; --logs
+/sc:analyze --focus security
+/sc:test --type unit affected-component
+</code></pre>
+<p><strong>코드 품질 개선</strong>:</p>
+<pre><code class="language-bash">/sc:analyze --focus quality
+/sc:improve --preview src/
+/sc:cleanup --safe
+/sc:test --coverage
+</code></pre>
+<p><strong>배포 전 체크리스트</strong>:</p>
+<pre><code class="language-bash">/sc:test --type all --coverage
+/sc:analyze --focus security
+/sc:build --type prod --optimize
+/sc:git --smart-commit
+</code></pre>
+<h3 id="_13">명령어 문제 해결</h3>
+<p><strong>명령어가 예상대로 작동하지 않습니까?</strong></p>
+<ul>
+<li><code>--help</code>를 추가하여 모든 옵션을 확인해보세요</li>
+<li>사용 가능한 경우 <code>--preview</code> 또는 <code>--safe</code> 플래그를 사용하세요</li>
+<li>더 작은 범위(전체 프로젝트 대 단일 파일)로 시작하세요</li>
+</ul>
+<p><strong>분석이 너무 오래 걸립니까?</strong></p>
+<ul>
+<li><code>--focus</code>를 사용하여 범위를 좁히세요</li>
+<li>심층 분석 대신 <code>--depth quick</code>을 시도해보세요</li>
+<li>먼저 작은 디렉토리를 분석하세요</li>
+</ul>
+<p><strong>빌드/테스트 명령어가 실패합니까?</strong></p>
+<ul>
+<li>도구가 PATH에 있는지 확인하세요</li>
+<li>구성 파일이 예상 위치에 있는지 확인하세요</li>
+<li>먼저 기본 명령어를 직접 실행해보세요</li>
+</ul>
+<p><strong>어떤 명령어를 사용해야 할지 모르겠습니까?</strong></p>
+<ul>
+<li><code>/index</code>를 사용하여 사용 가능한 명령어를 찾아보세요</li>
+<li>위의 빠른 참조 표를 보세요</li>
+<li>가장 구체적인 명령어를 먼저 시도한 다음 더 넓은 범위의 명령어를 시도하세요</li>
+</ul>
+<hr />
+<h2 id="_14">최종 참고 사항 📝</h2>
+<p><strong>이 명령어에 대한 진짜 진실</strong> 💯:</p>
+<ul>
+<li><strong>그냥 시도해보세요</strong> - 이 가이드를 먼저 공부할 필요가 없습니다</li>
+<li><strong>기본부터 시작하세요</strong> - <code>/analyze</code>, <code>/build</code>, <code>/improve</code>가 대부분의 요구를 충족합니다</li>
+<li><strong>자동 활성화가 작동하도록 두세요</strong> - SuperClaude는 보통 유용한 전문가를 선택합니다</li>
+<li><strong>자유롭게 실험하세요</strong> - 먼저 무슨 일이 일어날지 보고 싶다면 <code>--preview</code>를 사용하세요</li>
+</ul>
+<p><strong>아직 미흡한 점:</strong></p>
+<ul>
+<li>복잡한 오케스트레이션(spawn, task)은 약간 불안정할 수 있습니다</li>
+<li>일부 분석은 프로젝트 설정에 크게 의존합니다</li>
+<li>일부 명령어의 오류 처리가 더 좋을 수 있습니다</li>
+</ul>
+<p><strong>항상 더 좋아지고 있습니다:</strong></p>
+<ul>
+<li>사용자 피드백을 바탕으로 명령어를 적극적으로 개선합니다</li>
+<li>최신 명령어(analyze, improve)가 더 잘 작동하는 경향이 있습니다</li>
+<li>자동 활성화는 계속해서 더 똑똑해지고 있습니다</li>
+</ul>
+<p><strong>이것을 외우는 것에 스트레스 받지 마세요</strong> 🧘‍♂️</p>
+<ul>
+<li>SuperClaude는 사용을 통해 발견할 수 있도록 설계되었습니다</li>
+<li><code>/</code>를 입력하여 사용 가능한 명령어를 보세요</li>
+<li>명령어는 <code>--help</code>를 사용할 때 할 수 있는 일을 제안합니다</li>
+<li>지능적인 라우팅이 대부분의 복잡성을 처리합니다</li>
+</ul>
+<p><strong>도움이 필요하십니까?</strong> 막혔다면 GitHub 이슈를 확인하거나 새로 만드세요! 🚀</p>
+<hr />
+<p><em>행복한 코딩! 그냥 기억하세요 - 이 가이드의 대부분을 건너뛰고 직접 해보면서 배울 수 있습니다. 🎯</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.50899def.min.js"></script>
+      
+    
+  </body>
+</html>
