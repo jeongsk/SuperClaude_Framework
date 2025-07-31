@@ -31,6 +31,7 @@ plugins:
   - search
 
 nav:
+  - '홈': 'index.md'
   - 'SuperClaude 사용자 가이드': 'superclaude-user-guide.md'
   - '명령어 가이드': 'commands-guide.md'
   - '플래그 가이드': 'flags-guide.md'
